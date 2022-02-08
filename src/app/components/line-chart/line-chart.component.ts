@@ -5,6 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './line-chart.component.html',
   styleUrls: ['./line-chart.component.css']
 })
+
 export class LineChartComponent implements OnInit {
 
   constructor() { }
