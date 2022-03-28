@@ -22,7 +22,7 @@ export type ChartOptions = {
 })
 
 export class GraphicComponent implements OnInit {
-  @ViewChild("chart") chart!: ChartComponent;
+  @ViewChild("chart") chart: ChartComponent = new ChartComponent;
   public chartOptions!: Partial<ChartOptions>;
 
   constructor() {}
