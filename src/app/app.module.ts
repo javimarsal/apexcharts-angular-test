@@ -3,10 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgApexchartsModule } from 'ng-apexcharts';
 
 import { AppComponent } from './app.component';
+import { GraphicComponent } from './components/graphic/graphic.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    GraphicComponent
   ],
   imports: [
     BrowserModule,
