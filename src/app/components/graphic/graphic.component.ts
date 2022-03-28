@@ -4,14 +4,12 @@ import {
   ChartComponent,
   ApexAxisChartSeries,
   ApexChart,
-  ApexXAxis,
   ApexTitleSubtitle
 } from "ng-apexcharts";
 
 export type ChartOptions = {
   series: ApexAxisChartSeries;
   chart: ApexChart;
-  xaxis: ApexXAxis;
   title: ApexTitleSubtitle;
 }
 
@@ -22,7 +20,7 @@ export type ChartOptions = {
 })
 
 export class GraphicComponent implements OnInit {
-  @ViewChild("chart") chart: ChartComponent = new ChartComponent;
+  @ViewChild("chart") chart!: ChartComponent;
   public chartOptions!: Partial<ChartOptions>;
 
   constructor() {}
@@ -53,6 +51,7 @@ export class GraphicComponent implements OnInit {
       ],
       chart: {
         height: 350,
+        width: 600,
         type: 'bar'
       },
       title: {
